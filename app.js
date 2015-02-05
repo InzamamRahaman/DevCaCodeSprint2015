@@ -59,13 +59,14 @@
 //
 //module.exports = app;
 
-
+var fs = require("fs");
 var express = require("express");
 var path = require("path");
 var config = require("./lib/config");
 var mongoose = require("mongoose");
 var mongooseAPI = require("mongoose-api");
 var app = config.init(express());
+
 var http = require("http").Server(app);
 //mongooseAPI.serveModels(app);
 var db = mongoose.connection;
@@ -80,15 +81,22 @@ var mongoModels = require("./lib/mongo-models").create(mongoose);
 var subs = require("./lib/subscription-manager").createSubscriptionManager(http, mongoModels);
 
 mongoose.connect('mongodb://localhost/test');
-
+var rest = require("./lib/rest")(app, mongoModels);
 mongoose.connection.on('error', console.error.bind(console, "console.log"));
+
+var parse = csvParser();
+parse.on('finish', console.log);
+parse.on('error', function(err) {
+   console.log(err.message);
+});
 
 mongoose.connection.once('open', function() {
 
     http.listen(config.port, function(){
         console.log("Listening on http://127.0.0.1:"+config.port);
         subs.start_streaming();
-
+        var input = fs.createReadStream(__dirname + "/csv/accidents.csv");
+        input.pipe(parse);
     });
 
 });
