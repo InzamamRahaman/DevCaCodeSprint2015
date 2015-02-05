@@ -70,6 +70,7 @@ var http = require("http").Server(app);
 //mongooseAPI.serveModels(app);
 var db = mongoose.connection;
 var static_loc = path.join(path.join(__dirname, 'app'), 'views');
+var csvParser = require("csv-parse");
 
 app.use(express.static(static_loc));
 //var mongooseModel = require("./lib/mongo-models").create(undefined);
@@ -87,6 +88,7 @@ mongoose.connection.once('open', function() {
     http.listen(config.port, function(){
         console.log("Listening on http://127.0.0.1:"+config.port);
         subs.start_streaming();
+
     });
 
 });
