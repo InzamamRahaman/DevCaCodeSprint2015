@@ -67,22 +67,25 @@ var mongoose = require("mongoose");
 var mongooseAPI = require("mongoose-api");
 var app = config.init(express());
 var http = require("http").Server(app);
-mongooseAPI.serveModels(app);
+//mongooseAPI.serveModels(app);
 var db = mongoose.connection;
 var static_loc = path.join(path.join(__dirname, 'app'), 'views');
 
 app.use(express.static(static_loc));
+//var mongooseModel = require("./lib/mongo-models").create(undefined);
 
-var subs = require("./lib/subscription-manager")(http, db);
+var mongoModels = require("./lib/mongo-models").create(mongoose);
 
+var subs = require("./lib/subscription-manager").createSubscriptionManager(http, mongoModels);
 
+mongoose.connect('mongodb://localhost/test');
 
-db.on('error', console.error.bind(console, "console.log"));
+mongoose.connection.on('error', console.error.bind(console, "console.log"));
 
-db.once('open', function() {
+mongoose.connection.once('open', function() {
 
-    http.createServer(app).listen(config.port, function() {
-       console.log('Express is running :D');
+    http.listen(config.port, function(){
+        console.log("Listening on http://127.0.0.1:"+config.port);
     });
 
 });
