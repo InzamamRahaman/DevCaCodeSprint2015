@@ -71,7 +71,7 @@ var http = require("http").Server(app);
 //mongooseAPI.serveModels(app);
 var db = mongoose.connection;
 var static_loc = path.join(path.join(__dirname, 'app'), 'views');
-var csvParser = require("csv-parse");
+
 
 app.use(express.static(static_loc));
 //var mongooseModel = require("./lib/mongo-models").create(undefined);
@@ -85,24 +85,80 @@ var rest = require("./lib/rest")
 rest.init(app, mongoModels);
 mongoose.connection.on('error', console.error.bind(console, "console.log"));
 
-var parse = csvParser();
-parse.on('finish', console.log);
-parse.on('error', function(err) {
-   console.log(err.message);
-});
+var _ = require("lodash");
+
+
+function create_json_representation(data) {
+
+    //console.log(data);
+    var len = data[0].length;
+    var v1 = _.map(data, function(row) {
+       return {
+           'temp' : row[len - 3],
+           'lat' : row[len - 2],
+           'long' : row[len - 1]
+       }
+    });
+
+
+    var v2 = _.filter(v1, function(row) {
+        var lat = row['lat'];
+        var long = row['long'];
+        if(lat == undefined || lat == null || lat == '') {
+            return false;
+        } else if(long == undefined || long == null || long == '') {
+            return false;
+        } else {
+            return true;
+        }
+    });
+
+    //console.log(v2);
+
+    var groupings = _.groupBy(v2, function(row) {
+       return [row['lat'], row['long']];
+    });
+
+    //console.log(groupings);
+
+    return _.map(groupings, function(group) {
+        //console.log("grp "  + JSON.stringify(group));
+        var vals = _.map(group, function(g) {
+            return parseInt(g['temp']);
+        });
+        var sum = _.reduce(vals, function(a, b) {return a + b}, 0);
+        return {
+
+            'lat' : parseFloat(group[0]['lat']),
+            'long' : parseFloat(group[0]['long']),
+            'heat' : sum
+        };
+    });
+
+}
+
 
 mongoose.connection.once('open', function() {
 
     http.listen(config.port, function(){
         console.log("Listening on http://127.0.0.1:"+config.port);
         subs.start_streaming();
-        fs.readFile(__dirname + "/csv/accidents.csv", function(err, res) {
-           if(err) {
-               console.log(err);
-           } else {
-               console.log(res);
-           }
-        });
+        var loc = __dirname + "/csv/accidents.csv"
+        var stream = fs.createReadStream(loc);
+        var csv = require("fast-csv");
+        var d = [];
+        var csvStream = csv()
+            .on('data', function(data) {
+                d.push(data);
+            })
+            .on('end', function() {
+                d.shift();
+                var csv_data = create_json_representation(d);
+                app.get('/get/accidents', function(req, res) {
+                   res.json(csv_data);
+                });
+            });
+        stream.pipe(csvStream);
     });
 
 });
