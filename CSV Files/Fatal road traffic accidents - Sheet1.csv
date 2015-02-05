@@ -1,0 +1,76 @@
+which cours,NAME,AGE,SEX,LOCATION,STREET ADDRESS,CONTEXT: DRIVER_PASSENGER_PEDESTRIAN,DATE,INCIDENT_DEATH_FOUND,CATEGORY:SPEEDING_DRUNK DRIVING_NO SEATBELT_OVERTAKING_OTHER,SOURCE,WEIGHT,LAT,LONG
+53,Stacey Rique,32,F,Audrey Jeffers Highway,"Audrey Jeffers Highway, Trinidad and Tobago, West Indies",Driver,25-Jun-14,INCIDENT,Other,Guardian,1,10.667672,-61.536567
+35,Clinton Grant,42,M,Audrey Jeffers Highway,"Audrey Jeffers Highway, Trinidad and Tobago, West Indies",Cyclist,29-Mar-14,INCIDENT,Other,Guardian,1,10.667672,-61.536567
+15,Unidentified,early 60s,M,Audrey Jeffers Highway,"Audrey Jeffers Highway, Trinidad and Tobago, West Indies",Pedestrian,9-Feb-14,INCIDENT,Speeding,Guardian,1,10.667672,-61.536567
+31,Norell Nandalal,44,M,Bhagwantie Road,"Bhagwantie Road, Trinidad and Tobago, West Indies",Driver,19-Mar-14,DEATH,Other,Guardian,3,,
+57,Nabeer Shah,21,M,"Camden, Couva","Camden, Couva, Trinidad and Tobago, West Indies",Driver,29-Jun-14,INCIDENT,Speeding,Guardian,1,10.418106,-61.447964
+56,Maurice Scott,27,M,Caroni North Bank Road,"Caroni North Bank Road, Trinidad and Tobago, West Indies",Driver,26-Jun-14,INCIDENT,Speeding,Guardian,1,10.591727,-61.330546
+42,Dain Rawlins,Unknown,M,"Chase Village Main Road, Chaguanas","Chase Village Main Road, Chaguanas, Trinidad and Tobago, West Indies",Pedestrian,24-May-14,INCIDENT,Speeding,Guardian,1,10.487646,-61.407643
+11,"Junior ""Chicken"" Noriega",43,M,Churchill-Roosevelt Highway near Golden Grove intersection,"Churchill-Roosevelt Highway near Golden Grove intersection, Trinidad and Tobago, West Indies",Driver,20-Jan-14,INCIDENT,Other,Guardian,1,10.637136,-61.394354
+14,Jeffrey Antoine,40,M,"Churchill-Roosevelt Highway, Cumuto, near Golden Grove intersection","Churchill-Roosevelt Highway, Cumuto, near Golden Grove intersection, Trinidad and Tobago, West Indies",Driver,9-Feb-14,INCIDENT,Other,Guardian,1,10.637136,-61.394354
+30,Unidentified,Unknown,M,"Churchill-Roosevelt Highway, Curepe","Churchill-Roosevelt Highway, Curepe, Trinidad and Tobago, West Indies",Pedestrian,17-Mar-14,INCIDENT,Speeding,Guardian,1,10.634742,-61.409889
+3,Kersha Tanner,27,F,"Churchill-Roosevelt Highway, Maloney","Churchill-Roosevelt Highway, Maloney, Trinidad and Tobago, West Indies",Driver,11-Jan-14,INCIDENT,Other,Guardian,1,10.615382,-61.317878
+40,Gordon Brown,25,M,"Churchill-Roosevelt Highway, Trincity","Churchill-Roosevelt Highway, Trincity, Trinidad and Tobago, West Indies",Driver,11-May-14,INCIDENT,Speeding,Guardian,1,10.629471,-61.359973
+52,Lynton Mc Intosh,57,M,Churchill-Roosevelt Highway,"Churchill-Roosevelt Highway, Trinidad and Tobago, West Indies",Driver,15-Jun-14,INCIDENT,Other,Guardian,1,10.629471,-61.359973
+24,Unidentified,Unknown,M,"Churchill-Roosevelt Highway, Valsayn","Churchill-Roosevelt Highway, Valsayn, Trinidad and Tobago, West Indies",Pedestrian,3-Mar-14,INCIDENT,Other,Guardian,1,10.634326,-61.419215
+34,Henry Ernest,42,M,"Corner BWIA Boulevard and St Helena Road, Piarco","Corner BWIA Boulevard and St Helena Road, Piarco, Trinidad and Tobago, West Indies",Driver,23-Mar-14,INCIDENT,Other,Guardian,1,10.589632,-61.323591
+32,Unidentified,Unknown,M,Corner St Helena By-Pass Road and Caroni North Bank Road,"Corner St Helena By-Pass Road and Caroni North Bank Road, Trinidad and Tobago, West Indies",Driver,23-Mar-14,INCIDENT,Unknown,Guardian,1,10.589632,-61.323591
+21,Rupert Thomas,53,M,"Cross Crossing Interchange, San Fernando","Cross Crossing Interchange, San Fernando, Trinidad and Tobago, West Indies",Driver,24-Feb-14,INCIDENT,Speeding,Guardian,1,10.696877,-61.553859
+45,Narissa Field,24,F,"after KFC intersection, Diego Martin Highway southbound","Diego Martin Highway southbound, Trinidad and Tobago, West Indies",Driver,31-May-14,INCIDENT,Speeding,Guardian,1,10.207045,-61.397347
+72,Shaun Sabessar,25,M,"Digity Road, Barrackpore","Digity Road, Barrackpore, Trinidad and Tobago, West Indies",Driver,1-Aug-14,INCIDENT,Overtaking,Guardian,1,10.633926,-61.335786
+12,Sydney Barnes,69,M,"Dunderhill, Arouca","Dunderhill, Arouca, Trinidad and Tobago, West Indies",Pedestrian,30-Jan-14,INCIDENT,Speeding,Guardian,1,10.633926,-61.335786
+4,Jenique Charles,11,F,"Eastern Main Road, Damarie Hill, Guaico, Sangre Grande","Eastern Main Road, Damarie Hill, Guaico, Sangre Grande, Trinidad and Tobago, West Indies",Pedestrian,11-Jan-14,INCIDENT,Speeding,Guardian,1,10.643685,-61.365509
+41,Leana Anand,21,F,"Eastern Main Road, Tacarigua","Eastern Main Road, Tacarigua, Trinidad and Tobago, West Indies",Passenger,11-May-14,INCIDENT,Other,Guardian,1,10.643685,-61.365509
+58,Devon Thomas,Unknown,M,"Edinburgh Village, Chaguanas","Edinburgh Village, Chaguanas, Trinidad and Tobago, West Indies",Passenger,1-Jul-14,INCIDENT,Overtaking,Guardian,1,10.508725,-61.400563
+71,Nanda Ramcharan,36,F,"Endeavour Flyover, Chaguanas","Endeavour Flyover, Chaguanas, Trinidad and Tobago, West Indies",Passenger,29-Jul-14,INCIDENT,Speeding,Guardian,1,10.566457,-61.416848
+70,Mahadeo Ramcharan,48,M,"Endeavour Flyover, Chaguanas","Endeavour Flyover, Chaguanas, Trinidad and Tobago, West Indies",Driver,29-Jul-14,INCIDENT,Speeding,Guardian,1,10.566457,-61.416848
+69,Nyron Ramcharan,12,M,"Endeavour Flyover, Chaguanas","Endeavour Flyover, Chaguanas, Trinidad and Tobago, West Indies",Passenger,29-Jul-14,INCIDENT,Speeding,Guardian,1,10.566457,-61.416848
+2,Leon Jagroop,20,M,Forress Park Overpass,"Forress Park Overpass, Trinidad and Tobago, West Indies",Driver,2-Jan-14,INCIDENT,Speeding,Guardian,1,10.633441,-61.21895
+37,Roshan Rampersad,Unknown,M,intersection of Eastern Main Road and Antigua Road,"intersection of Eastern Main Road and Antigua Road, Trinidad and Tobago, West Indies",Driver,27-Apr-14,INCIDENT,Other,Guardian,1,10.633441,-61.21895
+68,Wayne Llewellyn,Unknown,M,"Lady Young Road, Morvant","Lady Young Road, Morvant, Trinidad and Tobago, West Indies",Driver,27-Jul-14,INCIDENT,Overtaking,Guardian,1,10.674947,-61.498121
+67,Kimblee Taylor,32,F,"Lady Young Road, Morvant","Lady Young Road, Morvant, Trinidad and Tobago, West Indies",Passenger,27-Jul-14,INCIDENT,Overtaking,Guardian,1,10.674947,-61.498121
+9,Loren Lochan,24,F,"M2 Ring Road, Debe","M2 Ring Road, Debe, Trinidad and Tobago, West Indies",Passenger,18-Jan-14,INCIDENT,Drunk driving,Guardian,1,10.21969,-61.464311
+8,Rick Nash,45,M,"M2 Ring Road, Debe","M2 Ring Road, Debe, Trinidad and Tobago, West Indies",Driver,18-Jan-14,INCIDENT,Drunk driving,Guardian,1,10.21969,-61.464311
+7,Reynold Manoo,45,M,"M2 Ring Road, Debe","M2 Ring Road, Debe, Trinidad and Tobago, West Indies",Passenger,18-Jan-14,INCIDENT,Drunk driving,Guardian,1,10.21969,-61.464311
+49,Shabeez Mohammed,32,M,"Malgretoute Village, Princes Town","Malgretoute Village, Princes Town, Trinidad and Tobago, West Indies",Driver,8-Jun-14,INCIDENT,Other,Guardian,1,10.269141,-61.387205
+17,Kevin Forde,28,M,Manzanilla/ Mayaro Road,"Manzanilla/ Mayaro Road, Trinidad and Tobago, West Indies",Passenger,21-Feb-14,INCIDENT,Other,Guardian,1,10.283355,-61.384433
+47,Daniel Lawrence Rampersad,21,M,Manzanilla/Mayaro Road,"Manzanilla/Mayaro Road, Trinidad and Tobago, West Indies",Driver,3-Jun-14,INCIDENT,Speeding,Guardian,1,10.283355,-61.384433
+59,Arjoon Mattadeen,60,M,Naparima Mayaro Road,"Naparima Mayaro Road, Trinidad and Tobago, West Indies",Driver,5-Jul-14,DEATH,Other,Guardian,3,10.283355,-61.384433
+20,Joseph Modeste,31,M,Naparima-Mayaro Road,"Naparima-Mayaro Road, Trinidad and Tobago, West Indies",Driver,24-Feb-14,INCIDENT,Speeding,Guardian,1,10.283355,-61.384433
+25,Theresa Mohammed,57,F,"Near Aranguez access road, Churchill Roosevelt Highway","Near Aranguez access road, Churchill Roosevelt Highway, Trinidad and Tobago, West Indies",Driver,5-Mar-14,INCIDENT,Other,Guardian,1,10.644666,-61.446395
+39,Kerron Castillo,27,M,"near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni ","near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni , Trinidad and Tobago, West Indies",Driver,1-May-14,INCIDENT,Speeding,Guardian,1,10.605223,-61.423209
+63,Sapphire Chase,19,F,"near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni","near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni, Trinidad and Tobago, West Indies",Passenger,6-Jul-14,INCIDENT,Other,Guardian,1,10.605223,-61.423209
+62,Rakesh Dwarika,20,M,"near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni","near Caroni Bird Sanctuary, Uriah Butler Highway, Caroni, Trinidad and Tobago, West Indies",Driver,6-Jul-14,INCIDENT,Other,Guardian,1,10.605223,-61.423209
+29,Vishal Maharaj,18,M,Near Cocorite,"Near Cocorite, Trinidad and Tobago, West Indies",Passenger,16-Mar-14,INCIDENT,Other,Guardian,1,10.677825,-61.547309
+28,Sunil Mahadeo,19,M,Near Cocorite,"Near Cocorite, Trinidad and Tobago, West Indies",Passenger,16-Mar-14,INCIDENT,Other,Guardian,1,10.677825,-61.547309
+46,Sarran Lutchman,52,M,"near La Gloria Estate, Naparima Mayaro Road","near La Gloria Estate, Naparima Mayaro Road, Trinidad and Tobago, West Indies",Driver,31-May-14,INCIDENT,Speeding,Guardian,1,10.283355,-61.384433
+33,Brian Baptiste,32,M,"North Coast Road, Maracas","North Coast Road, Maracas, Trinidad and Tobago, West Indies",Driver,22/23 March 2014,FOUND,Unknown,Guardian,1,10.748424,-61.481173
+66,Lindon Jackson,33,M,Old Valencia Road,"Old Valencia Road, Trinidad and Tobago, West Indies",Driver,18-Jul-14,INCIDENT,Speeding,Guardian,1,10.748424,-61.481173
+36,Tevin Robertson,19,M,"Petrotrin oil refinery, Gasparillo","Petrotrin oil refinery, Gasparillo, Trinidad and Tobago, West Indies",Driver,29-Mar-14,INCIDENT,Other,Guardian,1,10.309863,-61.430376
+55,Chris Wong,27,M,Pointe-a-Pierre roundabout,"Pointe-a-Pierre roundabout, Trinidad and Tobago, West Indies",Driver,26-Jun-14,INCIDENT,Other,Guardian,1,10.316112,-61.453228
+73,Ovard Wellington,62,M,"Priority Bus Route, Arima","Priority Bus Route, Arima, Trinidad and Tobago, West Indies",Pedestrian,11-Aug-14,INCIDENT,Other,Guardian,1,10.641371,-61.271708
+27,Kadaisha Edwards,12,F,"Priority Bus Route, Laventille","Priority Bus Route, Laventille, Trinidad and Tobago, West Indies",Pedestrian,13-Mar-14,INCIDENT,Speeding,Guardian,1,10.646274,-61.495564
+10,Basdeo Batoon,69,M,"Priority Bus Route, near Dinsley Village, Tacarigua","Priority Bus Route, near Dinsley Village, Tacarigua, Trinidad and Tobago, West Indies",Pedestrian,20-Jan-14,INCIDENT,Other,Guardian,1,10.651414,-61.418375
+74,Ralph Abraham,65,M,"Priority Bus Route, St Joseph","Priority Bus Route, St Joseph, Trinidad and Tobago, West Indies",Pedestrian,17-Aug-14,INCIDENT,Speeding,Guardian,1,10.651414,-61.418375
+50,Christian Dookie,34,M,"Queen's Park Savannah, outside President's house","Queen's Park Savannah, outside President's house, Trinidad and Tobago, West Indies",Driver,12-Jun-14,INCIDENT,Speeding,Guardian,1,10.665137,61.516546
+1,Nicholas Deonarinesingh,23,M,"Rochard Road, Penal","Rochard Road, Penal, Trinidad and Tobago, West Indies",Driver,1-Jan-14,INCIDENT,Speeding,Guardian,1,10.154952,-61.403732
+51,Wilfred Morris,47,M,San Fernando by-pass,"San Fernando by-pass, Trinidad and Tobago, West Indies",Passenger,14-Jun-14,INCIDENT,Other,Guardian,1,10.28116,-61.447587
+65,Jermaine Ackee,22,M,"Sir Solomon Hochoy Highway, Claxton Bay","Sir Solomon Hochoy Highway, Claxton Bay, Trinidad and Tobago, West Indies",Driver,8-Jul-14,INCIDENT,Speeding,Guardian,1,10.450142,-61.41042
+64,Lee Ann Ramkissoon,23,F,"Sir Solomon Hochoy Highway, Claxton Bay","Sir Solomon Hochoy Highway, Claxton Bay, Trinidad and Tobago, West Indies",Passenger,8-Jul-14,INCIDENT,Speeding,Guardian,1,10.450142,-61.41042
+16,Junior La Barrie,29,M,"Solomon Hochoy Highway, Chase Village","Solomon Hochoy Highway, Chase Village, Trinidad and Tobago, West Indies",Passenger,17-Feb-14,INCIDENT,Other,Guardian,1,10.450142,-61.41042
+19,Kesav Ragoo,20,M,"Solomon Hochoy Highway, Freeport","Solomon Hochoy Highway, Freeport, Trinidad and Tobago, West Indies",Passenger,22-Feb-14,INCIDENT,Speeding,Guardian,1,10.450142,-61.41042
+18,Sheldon Ramdial,25,M,"Solomon Hochoy Highway, Freeport","Solomon Hochoy Highway, Freeport, Trinidad and Tobago, West Indies",Passenger,22-Feb-14,INCIDENT,Speeding,Guardian,1,10.450142,-61.41042
+13,Harry Arjoon,63,M,"South Trunk Road, La Romain","South Trunk Road, La Romain, Trinidad and Tobago, West Indies",Passenger,3-Feb-14,INCIDENT,Speeding,Guardian,1,10.25521,-61.479609
+48,Jessica Mohammed,5 months,F,"SS Erin Road, Santa Flora","SS Erin Road, Santa Flora, Trinidad and Tobago, West Indies",Passenger,8-Jun-14,DEATH,Other,Guardian,3,10.126989,-61.54379
+43,Ramnarine Bridgelal,60,M,"St Margaret's, Claxton Bay","St Margaret's, Claxton Bay, Trinidad and Tobago, West Indies",Driver,26-May-14,INCIDENT,Other,Guardian,1,10.345887,-61.45849
+61,Shastri Rampersad,38,M,"St Michael Road, Tacarigua","St Michael Road, Tacarigua, Trinidad and Tobago, West Indies",Driver,6-Jul-14,INCIDENT,Speeding,Guardian,1,10.645782,-61.357298
+60,Jason Adams,38,M,"St Michael Road, Tacarigua","St Michael Road, Tacarigua, Trinidad and Tobago, West Indies",Passenger,6-Jul-14,INCIDENT,Speeding,Guardian,1,10.645782,-61.357298
+54,Carlton Wellington,41,M,Trincity Central Road,"Trincity Central Road, Trinidad and Tobago, West Indies",Driver,26-Jun-14,INCIDENT,Speeding,Guardian,1,10.631881,-61.34969
+26,Ernst Lorquet,37,M,"Uriah Butler Highway, Chaguanas","Uriah Butler Highway, Chaguanas, Trinidad and Tobago, West Indies",Passenger,7-Mar-14,INCIDENT,Other,Guardian,1,10.522671,-61.408334
+23,Otto Gilbert,28,M,Valencia,"Valencia, Trinidad and Tobago, West Indies",Driver,2-Mar-14,INCIDENT,Drunk driving,Guardian,1,10.653976,-61.197967
+22,Kerry Ollivierre,27,F,Valencia,"Valencia, Trinidad and Tobago, West Indies",Passenger,2-Mar-14,INCIDENT,Drunk driving,Guardian,1,10.653976,-61.197967
+44,Jheron Emmanuel,22,M,"Wendy Fitzwilliam Boulevard, Diamond Vale","Wendy Fitzwilliam Boulevard, Diamond Vale, Trinidad and Tobago, West Indies",Pedestrian,29-May-14,INCIDENT,Other,Guardian,1,10.718073,-61.55977
+6,Stephen “Bubber” Bubb,36,M,"Williams Bay, Chaguaramas","Williams Bay, Chaguaramas, Trinidad and Tobago, West Indies",Driver,15-Jan-14,INCIDENT,Other,Guardian,1,10.691744,-61.600319
+5,Trevlyn Kerr,31,M,"Williams Bay, Chaguaramas","Williams Bay, Chaguaramas, Trinidad and Tobago, West Indies",Passenger,15-Jan-14,INCIDENT,Other,Guardian,1,10.691744,-61.600319
+38,Annie St John,Unknown,F,"Windward Road, Tobago","Windward Road, Tobago, Trinidad and Tobago, West Indies",Pedestrian,27-Apr-14,INCIDENT,Speeding,Guardian,1,11.254128,-60.565341
+75,Dulcie Ranjitsingh,,F,"Chaguanas Flyover, Solomon Hochoy Highway, Chaguanas",,Driver,24-Aug-14,INCIDENT,Speeding,Guardian,1,10.450142,-61.41042
