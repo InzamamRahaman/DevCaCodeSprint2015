@@ -1,3 +1,19 @@
+# Created by https://www.gitignore.io
+
+### WebStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+# Gradle:
+ .idea/gradle.xml
+ .idea/libraries
+
+# Mongo Explorer plugin:
+ .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
 # Logs
 logs
 *.log
@@ -23,6 +39,8 @@ build/Release
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+bower_components
 
 # Users Environment Variables
 .lock-wscript
+.idea/workspace.xml
