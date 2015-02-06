@@ -1,5 +1,5 @@
 function initialize() {
-  var getData = "/get/accidents"
+  var getData = "/get/pickup"
     var temp
     var count = 0
     var accidentData =[]
