@@ -1,16 +1,3 @@
-$(document).ready(function() {
-    var getData = "/get/accidents"
-    var temp
-    var count = 0
-    var accidentData =[]
-    $.get(getData, function(obj) {
-        temp = obj
-        temp.forEach(function(el) {
-          console.log(el)
-          accidentData[count++] = new google.maps.LatLng(el.lat,el.long)
-        })
-    })
-
 function initialize() {
   var mapOptions = {
     zoom: 13,
@@ -63,4 +50,18 @@ function changeOpacity() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+$(document).ready(function() {
+    var getData = "/get/accidents"
+    var temp
+    var count = 0
+    var accidentData =[]
+    $.get(getData, function(obj) {
+        temp = obj
+        temp.forEach(function(el) {
+          console.log(el)
+          accidentData[count++] = new google.maps.LatLng(el.lat,el.long)
+        })
+    })
 })
