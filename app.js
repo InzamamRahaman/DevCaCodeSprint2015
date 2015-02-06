@@ -67,7 +67,7 @@ var mongoose = require("mongoose");
 var mongooseAPI = require("mongoose-api");
 var app = config.init(express());
 
-var http = require("http").Server(app);
+var http = require("http").createServer(app);//.Server(app);
 //mongooseAPI.serveModels(app);
 var db = mongoose.connection;
 var static_loc = (path.join(__dirname, 'app'));
@@ -140,27 +140,58 @@ function create_json_representation(data) {
 
 mongoose.connection.once('open', function() {
 
-    http.listen(config.get_port(), function(){
-        console.log(static_loc);
-        console.log("Listening on http://127.0.0.1:"+config.port);
-        subs.start_streaming();
-        var loc = __dirname + "/csv/accidents.csv"
 
-        var stream = fs.createReadStream(loc);
-        var csv = require("fast-csv");
-        var d = [];
-        var csvStream = csv()
-            .on('data', function(data) {
-                d.push(data);
-            })
-            .on('end', function() {
-                d.shift();
-                var csv_data = create_json_representation(d);
-                app.get('/get/accidents', function(req, res) {
-                   res.json(csv_data);
+    http.listen(config.get_port());
+    http.on('listening', function() {
+
+            console.log(static_loc);
+            console.log("Listening on http://127.0.0.1:"+config.port);
+            subs.start_streaming();
+            var loc = __dirname + "/csv/accidents.csv"
+
+            var stream = fs.createReadStream(loc);
+            var csv = require("fast-csv");
+            var d = [];
+            var csvStream = csv()
+                .on('data', function(data) {
+                    d.push(data);
+                })
+                .on('end', function() {
+                    d.shift();
+                    var csv_data = create_json_representation(d);
+                    app.get('/get/accidents', function(req, res) {
+                        res.json(csv_data);
+                    });
                 });
-            });
-        stream.pipe(csvStream);
+            stream.pipe(csvStream);
+
+
     });
+
+    //http.listen(config.get_port(), function(){
+    //
+    //    console.log(static_loc);
+    //    console.log("Listening on http://127.0.0.1:"+config.port);
+    //    subs.start_streaming();
+    //    var loc = __dirname + "/csv/accidents.csv"
+    //
+    //    var stream = fs.createReadStream(loc);
+    //    var csv = require("fast-csv");
+    //    var d = [];
+    //    var csvStream = csv()
+    //        .on('data', function(data) {
+    //            d.push(data);
+    //        })
+    //        .on('end', function() {
+    //            d.shift();
+    //            var csv_data = create_json_representation(d);
+    //            app.get('/get/accidents', function(req, res) {
+    //                res.json(csv_data);
+    //            });
+    //        });
+    //    stream.pipe(csvStream);
+    //
+    //
+    //});
 
 });
