@@ -140,7 +140,7 @@ function create_json_representation(data) {
 
 mongoose.connection.once('open', function() {
 
-    http.listen(config.port, function(){
+    http.listen(config.get_port(), function(){
         console.log(static_loc);
         console.log("Listening on http://127.0.0.1:"+config.port);
         subs.start_streaming();
