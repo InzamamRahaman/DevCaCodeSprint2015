@@ -2,7 +2,7 @@
   "name": "sprint",
   "version": "0.0.0",
   "private": true,
-  "main" : "main.js",
+  "main" : "app.js",
   "scripts": {
     "start": "node app.js"
   },
