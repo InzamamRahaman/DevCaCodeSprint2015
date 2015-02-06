@@ -1,2 +1,1 @@
-web: node app.js
- man -k foo
+web: node app.js foo
