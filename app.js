@@ -80,7 +80,7 @@ var mongoModels = require("./lib/mongo-models").create(mongoose);
 
 var subs = require("./lib/subscription-manager").createSubscriptionManager(http, mongoModels);
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect(config.get_mongo_uri());
 var rest = require("./lib/rest")
 rest.init(app, mongoModels);
 mongoose.connection.on('error', console.error.bind(console, "console.log"));
