@@ -7,7 +7,7 @@ function initialize() {
         temp = obj
         temp.forEach(function(el) {
           console.log(el)
-          accidentData[count++] = new google.maps.LatLng(el.lat,el.long)
+          accidentData[count++] = new google.maps.LatLng(el.latitude,el.longitude)
         })
     })
   var mapOptions = {
