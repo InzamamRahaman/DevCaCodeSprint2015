@@ -1,5 +1,5 @@
-(function() {
-    var getData = "/get/accidents"
+function initialize() {
+  var getData = "/get/accidents"
     var temp
     var count = 0
     var accidentData =[]
@@ -10,9 +10,6 @@
           accidentData[count++] = new google.maps.LatLng(el.lat,el.long)
         })
     })
-}())
-
-function initialize() {
   var mapOptions = {
     zoom: 13,
     center: new google.maps.LatLng(10.667672, -61.536567),
@@ -64,8 +61,3 @@ function changeOpacity() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-toggleHeatmap();
-changeGradient();
-changeOpacity();
-changeRadius();
