@@ -70,7 +70,7 @@ var app = config.init(express());
 var http = require("http").Server(app);
 //mongooseAPI.serveModels(app);
 var db = mongoose.connection;
-var static_loc = path.join(path.join(__dirname, 'app'), 'views');
+var static_loc = (path.join(__dirname, 'app'));
 
 
 app.use(express.static(static_loc));
@@ -141,9 +141,11 @@ function create_json_representation(data) {
 mongoose.connection.once('open', function() {
 
     http.listen(config.port, function(){
+        console.log(static_loc);
         console.log("Listening on http://127.0.0.1:"+config.port);
         subs.start_streaming();
         var loc = __dirname + "/csv/accidents.csv"
+
         var stream = fs.createReadStream(loc);
         var csv = require("fast-csv");
         var d = [];
